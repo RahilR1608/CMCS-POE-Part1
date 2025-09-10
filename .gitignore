@@ -1,0 +1,16 @@
+# Visual Studio
+.vs/
+*.vsidx
+*.user
+*.suo
+
+# Build results
+bin/
+obj/
+
+# Logs and temp
+*.log
+*.tmp
+
+# IIS Express
+applicationhost.config

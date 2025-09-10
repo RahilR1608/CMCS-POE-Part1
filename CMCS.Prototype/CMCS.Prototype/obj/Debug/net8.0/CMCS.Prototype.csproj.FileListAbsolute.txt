@@ -32,3 +32,4 @@ C:\Rahil\Programming\CMCS-POE-Part1\CMCS.Prototype\CMCS.Prototype\obj\Debug\net8
 C:\Rahil\Programming\CMCS-POE-Part1\CMCS.Prototype\CMCS.Prototype\obj\Debug\net8.0\CMCS.Prototype.pdb
 C:\Rahil\Programming\CMCS-POE-Part1\CMCS.Prototype\CMCS.Prototype\obj\Debug\net8.0\CMCS.Prototype.genruntimeconfig.cache
 C:\Rahil\Programming\CMCS-POE-Part1\CMCS.Prototype\CMCS.Prototype\obj\Debug\net8.0\ref\CMCS.Prototype.dll
+C:\Rahil\Programming\CMCS-POE-Part1\CMCS.Prototype\CMCS.Prototype\obj\Debug\net8.0\CMCS.Prototype.sourcelink.json

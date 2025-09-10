@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|c:\\rahil\\programming\\cmcs-poe-part1\\cmcs.prototype\\cmcs.prototype\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|solutionrelative:cmcs.prototype\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CMCS.Prototype\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "CMCS.Prototype\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-10T19:06:39.864Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
