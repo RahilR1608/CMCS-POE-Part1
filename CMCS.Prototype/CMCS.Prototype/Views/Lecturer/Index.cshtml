@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "My Claims";
+}
+<h2 class="mb-3">My Claims</h2>
+
+<div class="d-flex gap-2 mb-3">
+    <button class="btn btn-primary" disabled>New Claim</button>
+    <button class="btn btn-outline-secondary" disabled>Upload Supporting Docs</button>
+</div>
+
+<table class="table table-striped align-middle">
+    <thead>
+        <tr><th>Month</th><th>Hours</th><th>Total</th><th>Status</th><th></th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Aug 2025</td>
+            <td>24</td>
+            <td>R 7,200.00</td>
+            <td><span class="badge bg-warning text-dark">Pending</span></td>
+            <td><a class="btn btn-sm btn-link disabled" href="#">View</a></td>
+        </tr>
+        <tr>
+            <td>Jul 2025</td>
+            <td>18</td>
+            <td>R 5,400.00</td>
+            <td><span class="badge bg-success">Approved</span></td>
+            <td><a class="btn btn-sm btn-link disabled" href="#">View</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<p class="text-muted small">Buttons are disabled — prototype visuals only.</p>
