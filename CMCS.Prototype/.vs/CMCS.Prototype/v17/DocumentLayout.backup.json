@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|c:\\rahil\\programming\\cmcs-poe-part1\\cmcs.prototype\\cmcs.prototype\\views\\coordinator\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|solutionrelative:cmcs.prototype\\views\\coordinator\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|c:\\rahil\\programming\\cmcs-poe-part1\\cmcs.prototype\\cmcs.prototype\\controllers\\coordinatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|solutionrelative:cmcs.prototype\\controllers\\coordinatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|c:\\rahil\\programming\\cmcs-poe-part1\\cmcs.prototype\\cmcs.prototype\\controllers\\lecturercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|solutionrelative:cmcs.prototype\\controllers\\lecturercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,11 +30,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Coordinator\\Index.cshtml",
+              "RelativeDocumentMoniker": "CMCS.Prototype\\Views\\Coordinator\\Index.cshtml",
+              "ToolTip": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Coordinator\\Index.cshtml*",
+              "RelativeToolTip": "CMCS.Prototype\\Views\\Coordinator\\Index.cshtml*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwBQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-10T19:20:58.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CoordinatorController.cs",
+              "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Controllers\\CoordinatorController.cs",
+              "RelativeDocumentMoniker": "CMCS.Prototype\\Controllers\\CoordinatorController.cs",
+              "ToolTip": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Controllers\\CoordinatorController.cs*",
+              "RelativeToolTip": "CMCS.Prototype\\Controllers\\CoordinatorController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T19:20:18.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LecturerController.cs",
+              "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Controllers\\LecturerController.cs",
+              "RelativeDocumentMoniker": "CMCS.Prototype\\Controllers\\LecturerController.cs",
+              "ToolTip": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Controllers\\LecturerController.cs",
+              "RelativeToolTip": "CMCS.Prototype\\Controllers\\LecturerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T19:15:18.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Lecturer\\Index.cshtml",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Views\\Lecturer\\Index.cshtml",
@@ -39,20 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LecturerController.cs",
-              "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Controllers\\LecturerController.cs",
-              "RelativeDocumentMoniker": "CMCS.Prototype\\Controllers\\LecturerController.cs",
-              "ToolTip": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Controllers\\LecturerController.cs*",
-              "RelativeToolTip": "CMCS.Prototype\\Controllers\\LecturerController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T19:15:18.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Views\\Shared\\_Layout.cshtml",
