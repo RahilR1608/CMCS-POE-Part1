@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kKVTT3f+S6sD/Z7c3+iVEAnRtazt0v41/C9xE+BuKGk=",
+  "Hash": "EGuOldA5CNduSKGGYwBrt7Iqsj2oyw6wEyD39FwRuqI=",
   "Source": "CMCS.Prototype",
   "BasePath": "_content/CMCS.Prototype",
   "Mode": "Default",
@@ -1317,6 +1317,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\wwwroot\\uploads\\87fe756b-621c-487e-8201-4568582e5f5a.png",
+      "SourceId": "CMCS.Prototype",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\wwwroot\\",
+      "BasePath": "_content/CMCS.Prototype",
+      "RelativePath": "uploads/87fe756b-621c-487e-8201-4568582e5f5a#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h9a656ia4m",
+      "Integrity": "i+nRdavImrLLLfByYtcK2ITnNTL0cpconCepfV+GqiA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\87fe756b-621c-487e-8201-4568582e5f5a.png"
     }
   ],
   "Endpoints": [
@@ -6401,6 +6422,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/87fe756b-621c-487e-8201-4568582e5f5a.h9a656ia4m.png",
+      "AssetFile": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\wwwroot\\uploads\\87fe756b-621c-487e-8201-4568582e5f5a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18339"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i+nRdavImrLLLfByYtcK2ITnNTL0cpconCepfV+GqiA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Sep 2025 08:43:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h9a656ia4m"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/87fe756b-621c-487e-8201-4568582e5f5a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-i+nRdavImrLLLfByYtcK2ITnNTL0cpconCepfV+GqiA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/87fe756b-621c-487e-8201-4568582e5f5a.png",
+      "AssetFile": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\wwwroot\\uploads\\87fe756b-621c-487e-8201-4568582e5f5a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18339"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i+nRdavImrLLLfByYtcK2ITnNTL0cpconCepfV+GqiA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Sep 2025 08:43:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-i+nRdavImrLLLfByYtcK2ITnNTL0cpconCepfV+GqiA="
         }
       ]
     }
