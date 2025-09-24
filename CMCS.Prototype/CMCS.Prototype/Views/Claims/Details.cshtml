@@ -2,7 +2,17 @@
 @{
     ViewData["Title"] = "Claim Details";
 }
+
 <h2>Claim Details</h2>
+
+@if (TempData["Err"] != null)
+{
+    <div class="alert alert-danger">@TempData["Err"]</div>
+}
+@if (TempData["Msg"] != null)
+{
+    <div class="alert alert-success">@TempData["Msg"]</div>
+}
 
 <dl class="row">
     <dt class="col-sm-3">Lecturer</dt>
@@ -32,7 +42,41 @@
     </dd>
 </dl>
 
-<p>
+<hr />
+
+<h5>Supporting Documents</h5>
+@if (Model.Documents == null || !Model.Documents.Any())
+{
+    <p class="text-muted">No documents uploaded yet.</p>
+}
+else
+{
+    <ul>
+        @foreach (var d in Model.Documents)
+        {
+            <li>
+                <a href="@d.FilePath" target="_blank">@d.FileName</a>
+                <span class="text-muted">(@d.UploadedOn.ToShortDateString())</span>
+            </li>
+        }
+    </ul>
+}
+
+<form asp-action="Upload" method="post" enctype="multipart/form-data" class="mt-3">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="claimId" value="@Model.ClaimId" />
+    <div class="row g-2">
+        <div class="col-sm-8">
+            <input type="file" name="file" class="form-control" />
+        </div>
+        <div class="col-sm-4">
+            <button class="btn btn-outline-secondary w-100">Upload</button>
+        </div>
+    </div>
+    <p class="text-muted small mt-2">Allowed: PDF, DOCX, XLSX, JPG, JPEG, PNG. Max 5 MB.</p>
+</form>
+
+<p class="mt-4">
     <a class="btn btn-outline-secondary" asp-action="Index">Back</a>
     <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.ClaimId">Edit</a>
 </p>

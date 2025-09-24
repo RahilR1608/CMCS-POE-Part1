@@ -1,8 +1,11 @@
 ﻿using System;
+using System.IO;                           // >>> for saving files
 using System.Linq;
 using System.Threading.Tasks;
 using CMCS.Prototype.Data;
 using CMCS.Prototype.Models;
+using Microsoft.AspNetCore.Hosting;         // >>> IWebHostEnvironment
+using Microsoft.AspNetCore.Http;            // >>> IFormFile
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,10 +15,12 @@ namespace CMCS.Prototype.Controllers
     public class ClaimsController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IWebHostEnvironment _env;   // >>> hosting env to get wwwroot
 
-        public ClaimsController(AppDbContext context)
+        public ClaimsController(AppDbContext context, IWebHostEnvironment env)   // >>> add env
         {
             _context = context;
+            _env = env;                                  // >>>
         }
 
         // GET: /Claims
@@ -122,7 +127,7 @@ namespace CMCS.Prototype.Controllers
             var claim = await _context.Claims.FindAsync(id);
             if (claim == null) return NotFound();
 
-            // Use the seeded Coordinator as approver for now
+            // Use the seeded Coordinator/Manager as approver for now
             var approver = await _context.Users
                 .Where(u => u.Role != UserRole.Lecturer)
                 .OrderBy(u => u.Role) // Coordinator first
@@ -143,6 +148,72 @@ namespace CMCS.Prototype.Controllers
 
             TempData["Msg"] = $"Claim {decision}.";
             return RedirectToAction("Index", "Coordinator");
+        }
+
+        // >>> POST: /Claims/Upload  (Document Upload with validation + error handling)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Upload(Guid claimId, IFormFile file)
+        {
+            // Validate claim exists
+            var claim = await _context.Claims.Include(c => c.Documents).FirstOrDefaultAsync(c => c.ClaimId == claimId);
+            if (claim == null) return NotFound();
+
+            // Basic validations
+            if (file == null || file.Length == 0)
+            {
+                TempData["Err"] = "No file selected.";
+                return RedirectToAction(nameof(Details), new { id = claimId });
+            }
+
+            // Allowed types + size
+            var allowed = new[] { ".pdf", ".docx", ".xlsx", ".jpg", ".jpeg", ".png" };
+            var ext = Path.GetExtension(file.FileName).ToLowerInvariant();
+            if (!allowed.Contains(ext))
+            {
+                TempData["Err"] = "Only PDF, DOCX, XLSX, JPG, JPEG, PNG files are allowed.";
+                return RedirectToAction(nameof(Details), new { id = claimId });
+            }
+            if (file.Length > 5 * 1024 * 1024) // 5 MB
+            {
+                TempData["Err"] = "File too large. Maximum allowed size is 5 MB.";
+                return RedirectToAction(nameof(Details), new { id = claimId });
+            }
+
+            try
+            {
+                // Ensure uploads folder exists
+                var uploadsRoot = Path.Combine(_env.WebRootPath, "uploads");
+                Directory.CreateDirectory(uploadsRoot);
+
+                // Unique file name
+                var uniqueName = $"{Guid.NewGuid()}{ext}";
+                var savePath = Path.Combine(uploadsRoot, uniqueName);
+
+                using (var stream = System.IO.File.Create(savePath))
+                {
+                    await file.CopyToAsync(stream);
+                }
+
+                // Save DB record
+                _context.SupportingDocuments.Add(new SupportingDocument
+                {
+                    DocumentId = Guid.NewGuid(),
+                    ClaimId = claimId,
+                    FileName = file.FileName,
+                    FilePath = $"/uploads/{uniqueName}",
+                    UploadedOn = DateTime.UtcNow
+                });
+                await _context.SaveChangesAsync();
+
+                TempData["Msg"] = "File uploaded successfully.";
+            }
+            catch
+            {
+                TempData["Err"] = "Upload failed. Please try again.";
+            }
+
+            return RedirectToAction(nameof(Details), new { id = claimId });
         }
     }
 }
