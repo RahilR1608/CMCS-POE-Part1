@@ -1,0 +1,55 @@
+﻿@model IEnumerable<CMCS.Prototype.Controllers.HRClaimSummaryVM>
+@{
+    ViewData["Title"] = "HR – Approved Claims Summary";
+    var grandHours = Model.Sum(x => x.TotalHours);
+    var grandTotal = Model.Sum(x => x.TotalAmount);
+    var grandClaims = Model.Sum(x => x.Claims);
+}
+
+<h2 class="mb-3">HR – Approved Claims Summary</h2>
+
+<div class="d-flex gap-2 mb-3">
+    <a asp-action="ExportCsv" class="btn btn-outline-primary">Download CSV</a>
+    <span class="align-self-center text-muted">(@grandClaims claims • @grandHours hours • @grandTotal.ToString("C2"))</span>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No approved claims found. Approve a claim first, then refresh this page.</div>
+}
+else
+{
+    <table class="table table-striped align-middle">
+        <thead>
+            <tr>
+                <th>Lecturer</th>
+                <th>Month</th>
+                <th>Year</th>
+                <th class="text-end"># Claims</th>
+                <th class="text-end">Total Hours</th>
+                <th class="text-end">Total Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var r in Model)
+            {
+                <tr>
+                    <td>@r.Lecturer</td>
+                    <td>@r.Month</td>
+                    <td>@r.Year</td>
+                    <td class="text-end">@r.Claims</td>
+                    <td class="text-end">@r.TotalHours</td>
+                    <td class="text-end">@r.TotalAmount.ToString("C2")</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr class="fw-bold">
+                <td colspan="3" class="text-end">Grand Totals:</td>
+                <td class="text-end">@grandClaims</td>
+                <td class="text-end">@grandHours</td>
+                <td class="text-end">@grandTotal.ToString("C2")</td>
+            </tr>
+        </tfoot>
+    </table>
+}

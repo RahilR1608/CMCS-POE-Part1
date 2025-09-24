@@ -171,3 +171,4 @@ C:\Rahil\Programming\CMCS-POE-Part1\CMCS.Prototype\CMCS.Prototype\obj\Debug\net8
 C:\Rahil\Programming\CMCS-POE-Part1\CMCS.Prototype\CMCS.Prototype\obj\Debug\net8.0\CMCS.Prototype.genruntimeconfig.cache
 C:\Rahil\Programming\CMCS-POE-Part1\CMCS.Prototype\CMCS.Prototype\obj\Debug\net8.0\ref\CMCS.Prototype.dll
 C:\Rahil\Programming\CMCS-POE-Part1\CMCS.Prototype\CMCS.Prototype\bin\Debug\net8.0\appsettings.Production.json
+C:\Rahil\Programming\CMCS-POE-Part1\CMCS.Prototype\CMCS.Prototype\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
