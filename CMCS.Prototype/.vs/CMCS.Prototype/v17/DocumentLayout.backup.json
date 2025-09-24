@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|c:\\rahil\\programming\\cmcs-poe-part1\\cmcs.prototype\\cmcs.prototype\\views\\claims\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|solutionrelative:cmcs.prototype\\views\\claims\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|c:\\rahil\\programming\\cmcs-poe-part1\\cmcs.prototype\\cmcs.prototype\\views\\claims\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|solutionrelative:cmcs.prototype\\views\\claims\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|c:\\rahil\\programming\\cmcs-poe-part1\\cmcs.prototype\\cmcs.prototype\\views\\claims\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|solutionrelative:cmcs.prototype\\views\\claims\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|c:\\rahil\\programming\\cmcs-poe-part1\\cmcs.prototype\\cmcs.prototype\\controllers\\claimscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|solutionrelative:cmcs.prototype\\controllers\\claimscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|c:\\rahil\\programming\\cmcs-poe-part1\\cmcs.prototype\\cmcs.prototype\\migrations\\20250924080749_seedusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|solutionrelative:cmcs.prototype\\migrations\\20250924080749_seedusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|c:\\rahil\\programming\\cmcs-poe-part1\\cmcs.prototype\\cmcs.prototype\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F67C04C-75DA-4B43-B596-4834423F28F7}|CMCS.Prototype\\CMCS.Prototype.csproj|solutionrelative:cmcs.prototype\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Migrations\\20250924075956_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMCS.Prototype\\Migrations\\20250924075956_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Migrations\\20250924075705_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,11 +102,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Claims\\Details.cshtml",
+              "RelativeDocumentMoniker": "CMCS.Prototype\\Views\\Claims\\Details.cshtml",
+              "ToolTip": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Claims\\Details.cshtml",
+              "RelativeToolTip": "CMCS.Prototype\\Views\\Claims\\Details.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T08:12:42.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Claims\\Create.cshtml",
+              "RelativeDocumentMoniker": "CMCS.Prototype\\Views\\Claims\\Create.cshtml",
+              "ToolTip": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Claims\\Create.cshtml*",
+              "RelativeToolTip": "CMCS.Prototype\\Views\\Claims\\Create.cshtml*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwBsAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T08:12:20.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Claims\\Index.cshtml",
+              "RelativeDocumentMoniker": "CMCS.Prototype\\Views\\Claims\\Index.cshtml",
+              "ToolTip": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Claims\\Index.cshtml*",
+              "RelativeToolTip": "CMCS.Prototype\\Views\\Claims\\Index.cshtml*",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwCoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T08:11:38.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClaimsController.cs",
+              "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Controllers\\ClaimsController.cs",
+              "RelativeDocumentMoniker": "CMCS.Prototype\\Controllers\\ClaimsController.cs",
+              "ToolTip": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Controllers\\ClaimsController.cs*",
+              "RelativeToolTip": "CMCS.Prototype\\Controllers\\ClaimsController.cs*",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAIwGYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T08:10:00.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250924080749_SeedUsers.cs",
+              "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Migrations\\20250924080749_SeedUsers.cs",
+              "RelativeDocumentMoniker": "CMCS.Prototype\\Migrations\\20250924080749_SeedUsers.cs",
+              "ToolTip": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Migrations\\20250924080749_SeedUsers.cs",
+              "RelativeToolTip": "CMCS.Prototype\\Migrations\\20250924080749_SeedUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T08:07:50.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250924075956_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Migrations\\20250924075956_InitialCreate.cs",
+              "RelativeDocumentMoniker": "CMCS.Prototype\\Migrations\\20250924075956_InitialCreate.cs",
+              "ToolTip": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Migrations\\20250924075956_InitialCreate.cs",
+              "RelativeToolTip": "CMCS.Prototype\\Migrations\\20250924075956_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T07:59:56.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "20250924075705_InitialCreate.cs",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Migrations\\20250924075705_InitialCreate.cs",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Migrations\\20250924075705_InitialCreate.cs",
@@ -95,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Program.cs",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Program.cs",
@@ -108,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\appsettings.json",
               "RelativeDocumentMoniker": "CMCS.Prototype\\appsettings.json",
@@ -121,20 +223,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Data\\AppDbContext.cs",
               "ToolTip": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Data\\AppDbContext.cs",
               "RelativeToolTip": "CMCS.Prototype\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAUwEIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAUwE8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-24T07:51:08.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Approval.cs",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Models\\Approval.cs",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Models\\Approval.cs",
@@ -147,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "SupportingDocument.cs",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Models\\SupportingDocument.cs",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Models\\SupportingDocument.cs",
@@ -160,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "ClaimLine.cs",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Models\\ClaimLine.cs",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Models\\ClaimLine.cs",
@@ -173,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Claim.cs",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Models\\Claim.cs",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Models\\Claim.cs",
@@ -186,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Models\\User.cs",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Models\\User.cs",
@@ -199,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "Enums.cs",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Models\\Enums.cs",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Models\\Enums.cs",
@@ -212,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Manager\\Index.cshtml",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Views\\Manager\\Index.cshtml",
@@ -225,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "ManagerController.cs",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Controllers\\ManagerController.cs",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Controllers\\ManagerController.cs",
@@ -238,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Coordinator\\Index.cshtml",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Views\\Coordinator\\Index.cshtml",
@@ -251,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "CoordinatorController.cs",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Controllers\\CoordinatorController.cs",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Controllers\\CoordinatorController.cs",
@@ -264,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "LecturerController.cs",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Controllers\\LecturerController.cs",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Controllers\\LecturerController.cs",
@@ -277,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Lecturer\\Index.cshtml",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Views\\Lecturer\\Index.cshtml",
@@ -290,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Rahil\\Programming\\CMCS-POE-Part1\\CMCS.Prototype\\CMCS.Prototype\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CMCS.Prototype\\Views\\Shared\\_Layout.cshtml",

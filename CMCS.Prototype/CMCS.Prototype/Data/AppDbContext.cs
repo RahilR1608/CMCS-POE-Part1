@@ -23,10 +23,10 @@ namespace CMCS.Prototype.Data
             b.Entity<Approval>().HasKey(x => x.ApprovalId);
 
             // ----- Decimal precision (remove the warnings) -----
-            b.Entity<Claim>().Property(x => x.HoursWorked).HasColumnType("decimal(18,2)");
-            b.Entity<Claim>().Property(x => x.HourlyRate).HasColumnType("decimal(18,2)");
-            b.Entity<Claim>().Property(x => x.TotalAmount).HasColumnType("decimal(18,2)");
-            b.Entity<ClaimLine>().Property(x => x.Hours).HasColumnType("decimal(18,2)");
+            b.Entity<Claim>().Property(x => x.HoursWorked).HasPrecision(18, 2);   // >>>
+            b.Entity<Claim>().Property(x => x.HourlyRate).HasPrecision(18, 2);    // >>>
+            b.Entity<Claim>().Property(x => x.TotalAmount).HasPrecision(18, 2);   // >>>
+            b.Entity<ClaimLine>().Property(x => x.Hours).HasPrecision(18, 2);     // >>>
 
             // ----- Relationships + delete behavior (avoid cascade cycles) -----
             // Claim -> Lecturer (User): Restrict
@@ -63,8 +63,31 @@ namespace CMCS.Prototype.Data
                 .WithMany(x => x.Approvals)
                 .HasForeignKey(x => x.ApproverId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            // >>> Seed 3 demo users (lecturer, coordinator, manager)
+            b.Entity<User>().HasData(
+                new User
+                {
+                    UserId = Guid.Parse("11111111-1111-1111-1111-111111111111"),
+                    FullName = "A. Naidoo",
+                    Email = "a@cmcs.local",
+                    Role = UserRole.Lecturer
+                },
+                new User
+                {
+                    UserId = Guid.Parse("22222222-2222-2222-2222-222222222222"),
+                    FullName = "C. Mthembu",
+                    Email = "c@cmcs.local",
+                    Role = UserRole.Coordinator
+                },
+                new User
+                {
+                    UserId = Guid.Parse("33333333-3333-3333-3333-333333333333"),
+                    FullName = "M. Dlamini",
+                    Email = "m@cmcs.local",
+                    Role = UserRole.Manager
+                }
+            );
         }
-
-
     }
 }

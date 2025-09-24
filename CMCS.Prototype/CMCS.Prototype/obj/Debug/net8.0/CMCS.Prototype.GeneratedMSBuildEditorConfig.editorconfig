@@ -28,6 +28,18 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Rahil/Programming/CMCS-POE-Part1/CMCS.Prototype/CMCS.Prototype/Views/Claims/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Rahil/Programming/CMCS-POE-Part1/CMCS.Prototype/CMCS.Prototype/Views/Claims/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Rahil/Programming/CMCS-POE-Part1/CMCS.Prototype/CMCS.Prototype/Views/Claims/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Rahil/Programming/CMCS-POE-Part1/CMCS.Prototype/CMCS.Prototype/Views/Coordinator/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmF0b3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

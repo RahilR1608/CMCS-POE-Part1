@@ -1,0 +1,38 @@
+﻿@model CMCS.Prototype.Models.Claim
+@{
+    ViewData["Title"] = "Claim Details";
+}
+<h2>Claim Details</h2>
+
+<dl class="row">
+    <dt class="col-sm-3">Lecturer</dt>
+    <dd class="col-sm-9">@Model.Lecturer?.FullName</dd>
+    <dt class="col-sm-3">Month / Year</dt>
+    <dd class="col-sm-9">@Model.Month/@Model.Year</dd>
+    <dt class="col-sm-3">Hours</dt>
+    <dd class="col-sm-9">@Model.HoursWorked</dd>
+    <dt class="col-sm-3">Hourly Rate</dt>
+    <dd class="col-sm-9">@Model.HourlyRate.ToString("C2")</dd>
+    <dt class="col-sm-3">Total</dt>
+    <dd class="col-sm-9"><strong>@Model.TotalAmount.ToString("C2")</strong></dd>
+    <dt class="col-sm-3">Status</dt>
+    <dd class="col-sm-9">
+        @switch (Model.Status)
+        {
+            case CMCS.Prototype.Models.DecisionStatus.Pending:
+                <span class="badge bg-warning text-dark">Pending</span>
+                ; break;
+            case CMCS.Prototype.Models.DecisionStatus.Approved:
+                <span class="badge bg-success">Approved</span>
+                ; break;
+            case CMCS.Prototype.Models.DecisionStatus.Rejected:
+                <span class="badge bg-danger">Rejected</span>
+                ; break;
+        }
+    </dd>
+</dl>
+
+<p>
+    <a class="btn btn-outline-secondary" asp-action="Index">Back</a>
+    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.ClaimId">Edit</a>
+</p>

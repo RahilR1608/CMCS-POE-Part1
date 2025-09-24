@@ -1,16 +1,22 @@
 ﻿@model IEnumerable<CMCS.Prototype.Models.Claim>
-
 @{
-    ViewData["Title"] = "My Claims";
+    ViewData["Title"] = "Claims";
+}
+<h2>Claims</h2>
+
+@if (TempData["Msg"] != null)
+{
+     <div class="alert alert-success">@TempData["Msg"]</div>
 }
 
-<h2 class="mb-3">My Claims</h2>
-
-<a class="btn btn-primary mb-3" asp-controller="Claims" asp-action="Create">+ New Claim</a>
+<p>
+    <a class="btn btn-primary" asp-action="Create">+ New Claim</a>
+</p>
 
 <table class="table table-striped align-middle">
     <thead>
         <tr>
+            <th>Lecturer</th>
             <th>Month</th>
             <th>Hours</th>
             <th>Total</th>
@@ -19,14 +25,15 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var claim in Model)
+        @foreach (var c in Model)
         {
             <tr>
-                <td>@claim.Month/@claim.Year</td>
-                <td>@claim.HoursWorked</td>
-                <td>@claim.TotalAmount.ToString("C2")</td>
+                <td>@c.Lecturer?.FullName</td>
+                <td>@c.Month/@c.Year</td>
+                <td>@c.HoursWorked</td>
+                <td>@c.TotalAmount.ToString("C2")</td>
                 <td>
-                    @switch (claim.Status)
+                    @switch (c.Status)
                     {
                         case CMCS.Prototype.Models.DecisionStatus.Pending:
                             <span class="badge bg-warning text-dark">Pending</span>
@@ -40,10 +47,8 @@
                     }
                 </td>
                 <td>
-                    <a class="btn btn-sm btn-outline-primary"
-                       asp-controller="Claims" asp-action="Details" asp-route-id="@claim.ClaimId">
-                        View
-                    </a>
+                    <a class="btn btn-sm btn-outline-primary" asp-action="Details" asp-route-id="@c.ClaimId">Details</a>
+                    <a class="btn btn-sm btn-outline-secondary" asp-action="Edit" asp-route-id="@c.ClaimId">Edit</a>
                 </td>
             </tr>
         }
