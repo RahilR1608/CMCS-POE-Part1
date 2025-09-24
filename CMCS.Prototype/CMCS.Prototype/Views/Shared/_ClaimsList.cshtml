@@ -1,0 +1,52 @@
+﻿@model IEnumerable<CMCS.Prototype.Models.Claim>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No items.</div>
+}
+else
+{
+    <table class="table table-striped align-middle">
+        <thead>
+            <tr>
+                <th>Lecturer</th>
+                <th>Month</th>
+                <th>Hours</th>
+                <th>Total</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td>@c.LecturerId</td>
+                    <td>@c.Month/@c.Year</td>
+                    <td>@c.HoursWorked</td>
+                    <td>@c.TotalAmount.ToString("C2")</td>
+                    <td>
+                        @switch (c.Status)
+                        {
+                            case CMCS.Prototype.Models.DecisionStatus.Pending:
+                                <span class="badge bg-warning text-dark">Pending</span>
+                                ; break;
+                            case CMCS.Prototype.Models.DecisionStatus.Approved:
+                                <span class="badge bg-success">Approved</span>
+                                ; break;
+                            case CMCS.Prototype.Models.DecisionStatus.Rejected:
+                                <span class="badge bg-danger">Rejected</span>
+                                ; break;
+                        }
+                    </td>
+                    <td>
+                        <a class="btn btn-sm btn-outline-primary"
+                           asp-controller="Claims" asp-action="Details" asp-route-id="@c.ClaimId">
+                            View
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

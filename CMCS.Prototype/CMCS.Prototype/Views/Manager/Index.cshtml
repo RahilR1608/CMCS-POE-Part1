@@ -1,24 +1,30 @@
-﻿@{
-    ViewData["Title"] = "Approvals Overview";
+﻿@model CMCS.Prototype.Controllers.ManagerVm
+@{
+    ViewData["Title"] = "Manager Overview";
 }
-<h2 class="mb-3">Approvals Overview</h2>
 
-<ul class="nav nav-tabs mb-3">
-    <li class="nav-item"><a class="nav-link active" href="#">Pending</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Approved</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Rejected</a></li>
+<h2 class="mb-3">Manager Overview</h2>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pending" type="button" role="tab">Pending (@Model.Pending.Count)</button>
+    </li>
+    <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#approved" type="button" role="tab">Approved (@Model.Approved.Count)</button>
+    </li>
+    <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#rejected" type="button" role="tab">Rejected (@Model.Rejected.Count)</button>
+    </li>
 </ul>
 
-<div class="list-group mb-4">
-    <a class="list-group-item list-group-item-action" href="#">
-        Aug 2025 • A. Naidoo • <span class="badge bg-warning text-dark">Pending</span>
-    </a>
-    <a class="list-group-item list-group-item-action" href="#">
-        Jul 2025 • A. Naidoo • <span class="badge bg-success">Approved</span> (by M. Dlamini • 2025-08-02)
-    </a>
-    <a class="list-group-item list-group-item-action" href="#">
-        Jun 2025 • B. Pillay • <span class="badge bg-danger">Rejected</span> (insufficient docs)
-    </a>
+<div class="tab-content pt-3">
+    <div class="tab-pane fade show active" id="pending" role="tabpanel">
+        @Html.Partial("_ClaimsList", Model.Pending)
+    </div>
+    <div class="tab-pane fade" id="approved" role="tabpanel">
+        @Html.Partial("_ClaimsList", Model.Approved)
+    </div>
+    <div class="tab-pane fade" id="rejected" role="tabpanel">
+        @Html.Partial("_ClaimsList", Model.Rejected)
+    </div>
 </div>
-
-<p class="text-muted small">Tabs & list are static — prototype visuals only.</p>
