@@ -1,16 +1,19 @@
-# Visual Studio
+# Visual Studio temp
 .vs/
-*.vsidx
 *.user
 *.suo
+*.cache
+*.dbmdl
+*.bak
+*.backup
+*.log
 
-# Build results
+# Build output
 bin/
 obj/
 
-# Logs and temp
-*.log
-*.tmp
+# EF Core Migrations snapshot (keep migrations, ignore model snapshot if needed)
+*.db
 
-# IIS Express
-applicationhost.config
+# Local settings
+appsettings.Development.json
