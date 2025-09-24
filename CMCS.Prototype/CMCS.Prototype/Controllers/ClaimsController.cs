@@ -113,5 +113,36 @@ namespace CMCS.Prototype.Controllers
             TempData["Msg"] = "Claim updated.";
             return RedirectToAction(nameof(Index));
         }
+
+        // POST: /Claims/Decide  (Coordinator/Manager approve or reject)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Decide(Guid id, DecisionStatus decision, string? comment)
+        {
+            var claim = await _context.Claims.FindAsync(id);
+            if (claim == null) return NotFound();
+
+            // Use the seeded Coordinator as approver for now
+            var approver = await _context.Users
+                .Where(u => u.Role != UserRole.Lecturer)
+                .OrderBy(u => u.Role) // Coordinator first
+                .FirstAsync();
+
+            _context.Approvals.Add(new Approval
+            {
+                ApprovalId = Guid.NewGuid(),
+                ClaimId = id,
+                ApproverId = approver.UserId,
+                Decision = decision,
+                DecisionDate = DateTime.UtcNow,
+                Comment = string.IsNullOrWhiteSpace(comment) ? "Reviewed" : comment
+            });
+
+            claim.Status = decision; // reflect latest decision on claim
+            await _context.SaveChangesAsync();
+
+            TempData["Msg"] = $"Claim {decision}.";
+            return RedirectToAction("Index", "Coordinator");
+        }
     }
 }
